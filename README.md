@@ -129,6 +129,9 @@ users:
 
 ## When you have an issue with `kubectl get pods`
 
+kubectl get nodes
+# Error from server (NotAcceptable): unknown (get nodes)
+
 
 Try install ing the below commands again
 
