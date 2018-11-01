@@ -127,3 +127,12 @@ users:
 
 
 
+## When you have an issue with `kubectl get pods`
+
+
+Try install ing the below commands again
+
+1) curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.8.7/bin/linux/amd64/kubectl
+2) chmod +x ./kubectl
+3) sudo mv ./kubectl /usr/local/bin/kubectl
+
