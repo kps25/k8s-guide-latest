@@ -16,6 +16,24 @@ $ chmod +x ./kubectl
 
 $ sudo mv ./kubectl /usr/local/bin/kubectl
 
+# Alternative method to install kubectl of a specific version
+
+cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+EOF
+   
+Then run the below command:-
+- $ yum install kubectl-<version>
+For example:- 
+   - yum install kubectl-1.8.7
+   
+
 Install kops
 wget https://github.com/kubernetes/kops/releases/download/1.8.1/kops-linux-amd64
 chmod +x kops-linux-amd64
