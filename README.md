@@ -34,7 +34,7 @@ For example:-
    - yum install kubectl-1.8.7
    
 
-Install kops
+# Install kops
 wget https://github.com/kubernetes/kops/releases/download/1.8.1/kops-linux-amd64
 chmod +x kops-linux-amd64
 sudo mv kops-linux-amd64 /usr/local/bin/kops
