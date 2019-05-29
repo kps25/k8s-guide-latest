@@ -100,48 +100,28 @@ Suggestions:
  * ssh to the master: ssh -i ~/.ssh/id_rsa admin@api.k8s.cloud.in
 
 
-
-
-# Commands:
-
-To know the cluster details
-$ Kops get clusters
-
-To know the nodes details
-$ kubectl get nodes –o wide
-
-To know the pods details
-$ kubectl get pods
-
 # To install Dashboard
 kubectl create -f https://raw.githubusercontent.com/kubernetes/kops/master/addons/kubernetes-dashboard/v1.4.0.yaml --context=${NAME} --validate=false
 
 
+# Commands:
 
-# To login to the dashboard:
+# To create a new namespace
+kubectl create namespace <namespace-name>
 
-root@ip-172-31-23-97:/tmp/KOPS/SSP_K8s/kubernetes# kubectl config view --minify
-apiVersion: v1
-clusters:
-- cluster:
-    certificate-authority-data: REDACTED
-    server: https://api.k8s.sspcloudpro.co.in
-  name: k8s.sspcloudpro.co.in
-contexts:
-- context:
-    cluster: k8s.sspcloudpro.co.in
-    user: k8s.sspcloudpro.co.in
-  name: k8s.sspcloudpro.co.in
-current-context: k8s.sspcloudpro.co.in
-kind: Config
-preferences: {}
-users:
-- name: k8s.sspcloudpro.co.in
-  user:
-    client-certificate-data: REDACTED
-    client-key-data: REDACTED
-    password: EfFK3EfAiHrpXyEiWKTpOdrsdyTK46km
-    username: admin
+
+## To get the login detals of the dashboard and creds of the Cluster
+kubectl config view --minify
+
+## To get the cluster details
+Kops get clusters
+
+
+## To know the nodes details $
+kubectl get nodes –o wide
+
+## To know the pods details $
+kubectl get pods
 
 
 
