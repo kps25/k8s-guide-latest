@@ -40,6 +40,10 @@ Apply the service account and cluster role binding to your cluster.
 ```kubectl apply -f eks-admin-service-account.yaml```
 
 
+## URL for K8s Dashboard:
+https://api.sspcloudpro.co.in/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/login
+
+
 
 ## To connect to the Kubernetes dashboard
 
@@ -61,4 +65,7 @@ Data
 ca.crt:     1025 bytes
 namespace:  11 bytes
 token:      <authentication_token>
+
+
+
 
