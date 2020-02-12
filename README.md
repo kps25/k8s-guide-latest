@@ -85,7 +85,12 @@ Suggestions:
 
 
 # To install Dashboard
-kubectl create -f https://raw.githubusercontent.com/kubernetes/kops/master/addons/kubernetes-dashboard/v1.4.0.yaml --context=${NAME} --validate=false
+$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc5/aio/deploy/recommended.yaml
+
+# Create An Authentication Token (RBAC)
+To find out how to create sample user and log in following the below Creating sample user guide.
+
+$ Link:- https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md
 
 
 # Commands:
