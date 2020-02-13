@@ -83,6 +83,13 @@ Suggestions:
  * list nodes: kubectl get nodes --show-labels
  * ssh to the master: ssh -i ~/.ssh/id_rsa admin@api.k8s.cloud.in
 
+# Once the cluster is up and running, We need to get the config to connect to K8s Cluster
+## Run the below command
+
+$ kops export kubecfg ${NAME}
+
+Above command will get the configurations of the newly created and copied into ~/.kube/config file
+
 
 # To install Dashboard
 $ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc5/aio/deploy/recommended.yaml
