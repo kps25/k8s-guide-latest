@@ -87,6 +87,12 @@ Suggestions:
 # To install Dashboard
 $ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc5/aio/deploy/recommended.yaml
 
+# Now access Dashboard at:
+
+$ http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/.
+
+
+
 # Create An Authentication Token (RBAC)
 To find out how to create sample user and log in following the below Creating sample user guide.
 
